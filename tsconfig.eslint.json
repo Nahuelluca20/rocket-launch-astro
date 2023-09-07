@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json", // Puedes extender tu tsconfig.json existente si lo tienes
+  "include": ["**/*.cjs", ".eslintrc.cjs"]
+}
