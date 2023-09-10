@@ -3,9 +3,9 @@ module.exports = {
     overrides: [
         {
             // Define the configuration for `.astro` file.
-            files: ["*.astro"],
+            files: ["*.astro", "*.ts"],
             // Enable this plugin
-            plugins: ["astro"],
+            plugins: ["astro", "*.ts"],
             env: {
                 // Enables global variables available in Astro components.
                 node: true,
@@ -18,7 +18,7 @@ module.exports = {
             // It's the setting you need when using TypeScript.
             parserOptions: {
                 parser: "@typescript-eslint/parser",
-                extraFileExtensions: [".astro"],
+                extraFileExtensions: [".astro", ".ts", ".tsx"],
                 // The script of Astro components uses ESM.
                 sourceType: "module",
             },
